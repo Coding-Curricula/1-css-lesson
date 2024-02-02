@@ -30,10 +30,70 @@
       .display-none {
         display: none;
       }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+        background-color: lightgoldenrodyellow;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .relative {
+        position: relative;
+        width: 100%;
+        background-color: lightblue;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        width: 200px;
+        background-color: lightcoral;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .wrapper {
+        position: relative;
+        border: 2px solid black;
+        padding: 20px;
+        height: 200px;
+        overflow: auto;
+        margin-bottom: 20px;
+      }
+
+      .wrapped-absolute {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: rebeccapurple;
+        color: white;
+        padding: 0 100px;
+        text-align: center;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: lightgreen;
+        padding: 30px;
+        text-align: center;
+      }
     </style>
     <title>Full HTML Doc</title>
   </head>
   <body>
+    <div class="sticky">
+      This is a sticky header. It sticks to the top of the page as you scroll.
+    </div>
+    <p>Scroll down to see the sticky positioning in action.</p>
+
     <h1>Hi<span> mom</span></h1>
     <p>
       My name is
@@ -63,10 +123,6 @@
     <h2>display: none</h2>
     <div class="display-none">This element is NOT VISIBLE!</div>
 
-    <div class="sticky">
-      This is a sticky header. It sticks to the top of the page as you scroll.
-    </div>
-
     <div class="relative">
       This is a relative positioned element.
       <div class="absolute">
@@ -85,8 +141,6 @@
       This is a fixed positioned element. It stays visible at the bottom right
       corner.
     </div>
-
-    <p>Scroll down to see the sticky positioning in action.</p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
       odio vitae vestibulum vestibulum.
