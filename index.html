@@ -4,32 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        .block{
-            display: block;
-            background-color: lightblue;
-            text-align: center;
-            margin: 10px 0;
-        }
+      .block {
+        display: block;
+        background-color: lightblue;
+        text-align: center;
+        margin: 10px 0;
+      }
 
-        .inline{
-            display: inline;
-            background-color: lightgreen;
-            margin: 0 20px;
-            padding: 0 10px;
-        }
+      .inline {
+        display: inline;
+        background-color: lightgreen;
+        margin: 0 20px;
+        padding: 0 10px;
+      }
 
-        .inline-block{
-            display: inline-block;
-            background-color: lightcoral;
-            width: 200px;
-            height: 100px;
-            text-align: center;
-            vertical-align: top;
-        }
+      .inline-block {
+        display: inline-block;
+        background-color: lightcoral;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        vertical-align: top;
+      }
 
-        .display-none{
-            display: none;
-        }
+      .display-none {
+        display: none;
+      }
     </style>
     <title>Full HTML Doc</title>
   </head>
@@ -53,7 +53,8 @@
     <p class="block">This is a block element.</p>
 
     <h2>display:inline</h2>
-    <span class="inline">This </span><span class="inline">is </span><span class="inline">inline.</span>
+    <span class="inline">This </span><span class="inline">is </span
+    ><span class="inline">inline.</span>
 
     <h2>display:inline-block</h2>
     <div class="inline-block">Inline block element with specific width</div>
@@ -61,5 +62,39 @@
 
     <h2>display: none</h2>
     <div class="display-none">This element is NOT VISIBLE!</div>
+
+    <div class="sticky">
+      This is a sticky header. It sticks to the top of the page as you scroll.
+    </div>
+
+    <div class="relative">
+      This is a relative positioned element.
+      <div class="absolute">
+        I'm absolutely positioned within the relative element.
+      </div>
+    </div>
+
+    <div class="wrapper">
+      This is a wrapper with relative positioning.
+      <div class="wrapped-absolute">
+        I'm absolutely positioned within the wrapper.
+      </div>
+    </div>
+
+    <div class="fixed">
+      This is a fixed positioned element. It stays visible at the bottom right
+      corner.
+    </div>
+
+    <p>Scroll down to see the sticky positioning in action.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
+      odio vitae vestibulum vestibulum.
+    </p>
+    <p>
+      More filler text to ensure scrolling is possible. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+      vestibulum.
+    </p>
   </body>
 </html>
